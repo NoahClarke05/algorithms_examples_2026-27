@@ -4,6 +4,13 @@ import java.util.Scanner;
 
 public class CalcMax {
     public static int getValidInteger(String prompt){
+        /**
+         * Verifies user has entered an integer
+         * Asks user to enter a number, and checks that it is an integer, and loops if not.
+         *
+         * @param String prompt - The message to display to the user
+         * @return int - The valid integer entered by the user
+         */
         Scanner input = new Scanner(System.in);
         int num = 0;
 
@@ -20,6 +27,14 @@ public class CalcMax {
     }
 
     public static void findMax(int num1, int num2, int num3){
+        /**
+         * Finds the largest of three integers
+         * Takes in three integers as parameters and compares them to find the largest
+         *
+         * @param int num1 - The first number
+         * @param int num2 - The second number
+         * @param int num3 - The third number
+         */
         int large = 0;
 
         large = num1;
@@ -36,6 +51,10 @@ public class CalcMax {
 
 
         static void Main() {
+            /**
+             * Asks user to enter 3 numbers
+             * It will then use the findMax function to compare them and display the largest
+             */
         int num1 = 0;
         int num2 = 0;
         int num3 = 0;
