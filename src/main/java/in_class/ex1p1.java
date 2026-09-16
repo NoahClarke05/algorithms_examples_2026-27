@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class ex1p1 {
     static void main(){
+        /**
+         * Asks user to enter a number
+         * It will then compare the user's input to a target number and display the average of all numbers entered
+         */
         Scanner input = new Scanner(System.in);
         int target = -1;
         int guess = 0;
