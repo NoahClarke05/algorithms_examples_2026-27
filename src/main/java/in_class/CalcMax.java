@@ -15,19 +15,12 @@ public class CalcMax {
         }
 
     num = input.nextInt();
-        System.out.println("You entered" + num);
+        System.out.println("You entered " + num);
         return num;
     }
 
-    public static void findMax(){
-        int num1 = 0;
-        int num2 = 0;
-        int num3 = 0;
+    public static void findMax(int num1, int num2, int num3){
         int large = 0;
-
-        num1 = CalcMax.getValidInteger("Please enter first number: ");
-        num2 = CalcMax.getValidInteger("Please enter second number: ");
-        num3 = CalcMax.getValidInteger("Please enter third number: ");
 
         large = num1;
         if (num2 > large){
@@ -39,6 +32,19 @@ public class CalcMax {
         }
 
         System.out.println("The largest number is: " + large);
+        }
+
+
+        static void Main() {
+        int num1 = 0;
+        int num2 = 0;
+        int num3 = 0;
+
+        num1 = getValidInteger("Please enter first number: ");
+        num2 = getValidInteger("Please enter second number: ");
+        num3 = getValidInteger("Please enter third number: ");
+
+        findMax(num1, num2, num3);
         }
     }
 
