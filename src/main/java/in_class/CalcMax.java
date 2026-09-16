@@ -50,11 +50,11 @@ public class CalcMax {
         }
 
 
-        static void Main() {
-            /**
-             * Asks user to enter 3 numbers
-             * It will then use the findMax function to compare them and display the largest
-             */
+    static void Main() {
+        /**
+         * Asks user to enter 3 numbers
+         * It will then use the findMax function to compare them and display the largest
+         */
         int num1 = 0;
         int num2 = 0;
         int num3 = 0;
