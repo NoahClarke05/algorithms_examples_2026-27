@@ -18,4 +18,28 @@ public class CalcMax {
         System.out.println("You entered" + num);
         return num;
     }
-}
+
+    public static void findMax(){
+        int num1 = 0;
+        int num2 = 0;
+        int num3 = 0;
+        int large = 0;
+
+        num1 = CalcMax.getValidInteger("Please enter first number: ");
+        num2 = CalcMax.getValidInteger("Please enter second number: ");
+        num3 = CalcMax.getValidInteger("Please enter third number: ");
+
+        large = num1;
+        if (num2 > large){
+            large = num2;
+        }
+
+        if (num3 > large){
+            large = num3;
+        }
+
+        System.out.println("The largest number is: " + large);
+        }
+    }
+
+
