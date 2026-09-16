@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class ex1p2 {
     static void main(){
+        /**
+         * Sums up all numbers between 2 given numbers
+         * First makes sure teh smaller number is num1, then counts up to num 2 and adds all numbers in between to total
+         */
         Scanner input = new Scanner(System.in);
         int num1 = 0;
         int num2 = 0;
