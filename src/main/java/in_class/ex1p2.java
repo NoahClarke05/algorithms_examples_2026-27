@@ -10,10 +10,8 @@ public class ex1p2 {
         int counter = 0;
         int total = 0;
 
-        System.out.println("Please enter the first number: ");
-        num1 = input.nextInt();
-        System.out.println("Please enter the second number: ");
-        num2 = input.nextInt();
+        num1 = CalcMax.getValidInteger("Please enter the first number: ");
+        num2 = CalcMax.getValidInteger("Please enter the second number: ");
 
         if (num1 > num2) {
             int temp = 0;
