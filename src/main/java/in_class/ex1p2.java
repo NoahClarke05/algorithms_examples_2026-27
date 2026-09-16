@@ -24,10 +24,11 @@ public class ex1p2 {
 
         counter = num1;
         total = num1;
-        while (counter != num2){
+
+        for (int i = 0; counter < num2; i++) {
             counter ++;
             total += counter;
-    }
+        }
         System.out.println("The sum of the numbers between " + num1 + " and " + num2 + " is: " + total);
     }
 }
