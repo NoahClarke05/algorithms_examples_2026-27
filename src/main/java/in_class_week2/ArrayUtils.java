@@ -21,5 +21,27 @@ public class ArrayUtils {
             System.out.println((i + 1) + ". " + array[i]);
         }
     }
+
+    public static void calcAverage(int[] array){
+        /**
+         * finds the average of all numbers in an array
+         * adds all numbers in an array to a total var and divides it by the number of variables in the array
+         * @param int[] array - The array of numbers
+         */
+        int total = 0;
+        int counter = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            total += array[i];
+            counter++;
+        }
+        if (counter > 0) {
+            int av = total/counter;
+            System.out.println("The average is: " + av);
+
+        }else{
+            System.out.println("Cannot calculate average of an empty array");
+        }
+    }
 }
 

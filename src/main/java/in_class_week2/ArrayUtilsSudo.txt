@@ -12,3 +12,15 @@ input: a String array
 for each value in the string array:
     print out its position and what the value is (1. bob, 2. michael, ...)
 
+------------------------------
+calcAverage
+input: an integer array
+output: the average of the numbers in the array
+
+for each number in the integer array:
+    add it to a running total
+    increment a counter
+if the counter is greater than 0:
+    print out the average (total / counter)
+else:
+    print out an error message (e.g., "Cannot calculate average of an empty array")

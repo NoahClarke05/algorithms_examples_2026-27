@@ -13,5 +13,7 @@ public class demointarray {
         ArrayUtils.displayArray(nums);
         System.out.println("---------------------------");
         ArrayUtils.displayArray(names);
+        System.out.println("---------------------------");
+        ArrayUtils.calcAverage(nums);
     }
 }
