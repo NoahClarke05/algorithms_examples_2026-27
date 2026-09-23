@@ -1,0 +1,5 @@
+input: an integer array
+
+for each value in the integer array:
+    print out its position and what the value is (1. 1, 2. 2, ...)
+
