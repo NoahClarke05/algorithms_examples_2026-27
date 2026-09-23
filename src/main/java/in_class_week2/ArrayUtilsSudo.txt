@@ -1,5 +1,14 @@
+displayArray - int
 input: an integer array
 
 for each value in the integer array:
     print out its position and what the value is (1. 1, 2. 2, ...)
+
+
+--------------------------
+displayArray - num
+input: a String array
+
+for each value in the string array:
+    print out its position and what the value is (1. bob, 2. michael, ...)
 
