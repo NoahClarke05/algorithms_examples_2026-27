@@ -59,5 +59,20 @@ public class ArrayUtils {
         }
         return max;
     }
+
+    public static String findMax(String[] array){
+        /**
+         * Finds the maximum value in an array
+         * @param String[] array - The array of strings
+         * @return String - The maximum value in the array
+         */
+        String max = "a";
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].compareTo(max) > 0) {
+                max = array[i];
+            }
+        }
+        return max;
+    }
 }
 
