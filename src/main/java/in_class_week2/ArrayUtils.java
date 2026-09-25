@@ -44,5 +44,20 @@ public class ArrayUtils {
             System.out.println("Cannot calculate average of an empty array");
         }
     }
+
+    public static int findMax(int[] array){
+        /**
+         * Finds the maximum value in an array
+         * @param int[] array - The array of numbers
+         * @return int - The maximum value in the array
+         */
+        int max = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
+            }
+        }
+        return max;
+    }
 }
 
