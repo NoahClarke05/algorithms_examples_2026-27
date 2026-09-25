@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class ArrayManipulation {
     static void main() {
         int[] grades = new int[10];
+        String[] texts = new String[10];
         int grade = 0;
         Scanner input = new Scanner(System.in);
 
@@ -17,7 +18,15 @@ public class ArrayManipulation {
             grades[i] = grade;
 
         }
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Please enter random text number" + (i+1) + ":");
+            String text = input.nextLine();
+            texts[i] = text;
+        }
         ArrayUtils.calcAverage(grades);
+        System.out.println("The maximum grade is: " + ArrayUtils.findMax(grades));
+        System.out.println("The maximum text is: " + ArrayUtils.findMax(texts));
     }
 }
 
