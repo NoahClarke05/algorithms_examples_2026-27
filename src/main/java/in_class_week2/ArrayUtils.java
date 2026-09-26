@@ -116,6 +116,11 @@ public class ArrayUtils {
     }
 
     public static int getMostFrequent(int[] array) {
+        /**
+         * Finds the most frequent integer in the array
+         * @param int[] array - The integer array
+         * @return int - The most frequent integer in the array
+         */
         int mostFrequent = array[0];
         int highestFrequency = 0;
 
