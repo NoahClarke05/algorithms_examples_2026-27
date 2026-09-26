@@ -74,5 +74,36 @@ public class ArrayUtils {
         }
         return max;
     }
+
+    public static int findMin(int[] array) {
+        /**
+         * Finds the minimum value in an array
+         * @param int[] array - The array of numbers
+         * @return int - The minimum value in the array
+         */
+        int min = 999999999;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < min) {
+                min = array[i];
+            }
+        }
+        return min;
+    }
+
+    public static String findMin(String[] array){
+        /**
+         * Finds the minimum value in an array
+         * @param String[] array - The array of strings
+         * @return String - The minimum value in the array
+         */
+        String min = "z";
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].compareTo(min) < 0) {
+                min = array[i];
+            }
+        }
+        return min;
+    }
+
 }
 

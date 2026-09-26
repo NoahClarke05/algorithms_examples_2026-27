@@ -27,6 +27,9 @@ public class ArrayManipulation {
         ArrayUtils.calcAverage(grades);
         System.out.println("The maximum grade is: " + ArrayUtils.findMax(grades));
         System.out.println("The maximum text is: " + ArrayUtils.findMax(texts));
+
+        System.out.println("The minimum grade is: " + ArrayUtils.findMin(grades));
+        System.out.println("The minimum text is: " + ArrayUtils.findMin(texts));
     }
 }
 
