@@ -105,5 +105,15 @@ public class ArrayUtils {
         return min;
     }
 
+    public static int count(int[] array, int value) {
+        int counter = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > value) {
+                counter++;
+            }
+        }
+        return counter;
+    }
+
 }
 

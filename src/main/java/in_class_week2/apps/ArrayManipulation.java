@@ -30,6 +30,8 @@ public class ArrayManipulation {
 
         System.out.println("The minimum grade is: " + ArrayUtils.findMin(grades));
         System.out.println("The minimum text is: " + ArrayUtils.findMin(texts));
+
+        System.out.println("The number of grades above 70 is: " + ArrayUtils.count(grades, 70));
     }
 }
 
