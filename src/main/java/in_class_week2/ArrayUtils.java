@@ -115,5 +115,24 @@ public class ArrayUtils {
         return counter;
     }
 
-}
+    public static int getMostFrequent(int[] array) {
+        int mostFrequent = array[0];
+        int highestFrequency = 0;
 
+        for (int i = 0; i < array.length; i++) {
+            int currentFrequency = 0;
+            for (int j = 0; j < array.length; j++) {
+                if (array[i] == array[j]) {
+                    currentFrequency++;
+                }
+            }
+
+            if (currentFrequency > highestFrequency) {
+                highestFrequency = currentFrequency;
+                mostFrequent = array[i];
+            }
+        }
+        return mostFrequent;
+    }
+
+}
