@@ -8,7 +8,7 @@ public class problem1TestBed {
         int [] array2 = {1,2,3,4,5};
         int [] array3 = {5,4,3,2,1};
         int [] array4 = {2,3,4,5,6};
-        int [] array5 = {1,2,3,4,6};
+        int [] array5 = {1,2,3,4,5,6};
 
         //Tests for problem1BruteForce
         System.out.println("Tests for problem1BruteForce:");
