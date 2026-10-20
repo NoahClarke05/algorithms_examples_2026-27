@@ -1,0 +1,34 @@
+PROBLEM 1:
+
+BRUTE FORCE:
+    - Compare each element of the first array with each element of the second array
+    - If all of the elements in the first array are found in the second array, return true
+    - If not all elements in the first array are found in the second array, return false
+
+for i starting at zero and ending at array1 length going up:
+    set a variable for found to false
+    for i starting at zero and ending at array2 length going up:
+        if i of array1 is equal to i of array 2:
+            set found variable to true
+            break
+
+    if !found
+        return false
+
+return true
+
+TWO POINTER:
+    - Since both arrays are ints, I can start by making a copy and sorting them.
+    - This will mean that I can have 1 pointer in each array, and since they are sorted, if they are equal, the pointers should be the same the whole way through
+    - If the pointers are not the same, than the arrays are not equal
+
+int [] temp1 = Arrays.copyOf(array1, array1.length);
+Arrays.sort(temp1);
+
+int [] temp2 = Arrays.copyOf(array2, array2.length);
+Arrays.sort(temp2);
+
+for i starting at 0 and ending at temp1 length:
+    if temp1[i] != temp2[i]:
+        return false
+return true
