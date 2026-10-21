@@ -1,0 +1,27 @@
+Sum with sorted data:
+
+Name:           sum()
+Description:    Given a sorted array of integers and a target value, find two numbers whose sum equals the target
+Input:          Array of data and target number to sum to
+Output:         Position of two numbers whos sum is the target
+Complexity:
+
+SETUP:
+create temp array to ensure the algorithm is pure and sorted
+int left = 0
+int right = data.length - 1
+
+
+// LOGIC:
+while left is less than right:
+    sum = data[left] + data[right]
+    if sum is equal to target:
+        Return the positions of the two numbers
+    else if sum is less than target:
+        Increment left
+    else:
+        Decrement right
+
+
+// OUTPUT:
+left and right

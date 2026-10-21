@@ -104,4 +104,31 @@ public class ArrayUtils {
         }
         return mostFreq;
     }
+
+    public static int[] sum(int [] data, int target){
+        if(data == null || data.length == 0){
+            throw new IllegalArgumentException("Cannot find the sum of an empty/null array");
+        }
+
+        int [] temp = Arrays.copyOf(data, data.length);
+        Arrays.sort(temp);
+
+        int left = 0;
+        int right = temp.length -1;
+
+        while (left < right){
+            int sum = temp[left] + temp[right];
+
+            if (sum == target){
+                return new int[]{left, right};
+
+            }else if (sum < target){
+                left++;
+
+            }else{
+                right--;
+            }
+        }
+        return new int[]{-1, -1};
+    }
 }
