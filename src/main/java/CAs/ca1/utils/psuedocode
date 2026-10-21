@@ -32,3 +32,18 @@ for i starting at 0 and ending at temp1 length:
     if temp1[i] != temp2[i]:
         return false
 return true
+
+----------------------------------
+PROBLEM 2:
+
+BRUTE FORCE:
+    - create a for loop cycling through each letter in the palindrome
+    - create a second loop going backwards through it
+    - If the characters are not equal, return false
+
+for i starting at 0 and ending at length of string divided by 2:
+    for j starting at length of string and ending at length of string divided by 2:
+        if string[i] != string[j]:
+            return false
+return true
+
