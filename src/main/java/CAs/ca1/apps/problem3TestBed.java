@@ -9,11 +9,22 @@ public class problem3TestBed {
         int[] array4 = {4, 12, 7, 9, 5, 18};
         int[] array5 = {1, 56, 4, 33, 63, 14, 18};
 
+        System.out.println("Brute Force Method:");
         int[] result = problem3.problem3BruteForce(array5, 100);
-        System.out.println("Start: " + result[0] + ", End: " + result[1]);
+        if (result.length == 1 && result[0] == 0) {
+            System.out.println("No valid subarray found");
+        } else {
+            System.out.println("Start = " + result[0] + ", End = " + result[1]);
+        }
 
+        System.out.println("Two Pointer Method:");
+        int[] resulttp = problem3.problem3TwoPointer(array5, 100);
+        if (resulttp.length == 1 && resulttp[0] == 0) {
+            System.out.println("No valid subarray found");
+        } else {
+            System.out.println("Start = " + resulttp[0] + ", End = " + resulttp[1]);
 
-
+        }
     }
 }
 

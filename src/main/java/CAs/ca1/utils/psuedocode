@@ -93,3 +93,26 @@ for i starting at 0 and ending at array.length:
             break;
 
 I should mention this was my first attempt at getting this method to work, which didnt work at all, so i made some adjustments in the actual algorithm
+
+TWO POINTER :
+    - create 2 pointers. start and end
+    - create a while loop to increase the end pointer
+    - create a for loop to increase the start pointer
+    - start by increasing the end pointer by 1
+    - keep increasing it until a you reach the target
+    - then increase the start pointer to shrink the window until the target isnt reached anymore
+    - then increase the end again, repeating this pattern until you find the smallest window size
+
+start = 0
+end = 0
+sum = 0
+minLength = array.length
+
+for i starting at 0 and ending at array.length-1:
+    sum += array[i]
+
+    while sum >= target:
+        if end - start + 1 < minLength:
+            minLength = end - start + 1
+        sum -= array[start]
+        start++
