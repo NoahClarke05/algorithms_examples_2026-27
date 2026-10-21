@@ -65,3 +65,31 @@ while start is less than or equals to end:
     end--;
 
 return true
+-----------------------------------
+PROBLEM 3:
+
+BRUTE FORCE:
+    - start with an initial loop looping through the array
+    - create another loop inside of that loop
+    - in the second loop, keep adding the numbers contiguosly until they get to the target
+    - do this for all numbers in the first loop, and eventually you will find the shortest contiguos subarray
+
+int count = 0;
+int sum = 0;
+int currentShortest = array.length;
+
+
+for i starting at 0 and ending at array.length:
+    sum = 0;
+    count = 0;
+    for j starting at 0 and ending at array.length:
+        sum += array[j];
+        count++;
+        if sum == target:
+            if count < currentShortest:
+                currentShortest = count;
+            break;
+        if sum > target:
+            break;
+
+I should mention this was my first attempt at getting this method to work, which didnt work at all, so i made some adjustments in the actual algorithm
