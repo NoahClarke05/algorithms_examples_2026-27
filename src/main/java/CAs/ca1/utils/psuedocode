@@ -47,3 +47,21 @@ for i starting at 0 and ending at length of string divided by 2:
             return false
 return true
 
+TWO POINTER:
+    - Start with two pointers, one at the beginning of the string and one at the end.
+    - Compare the characters at the two pointers.
+    - If they are equal, move the pointers towards each other.
+    - If they are not equal, return false.
+    - If the pointers meet or pass each other, return true.
+int n = palindrome.length();
+
+int start = 0;
+int end = n - 1;
+
+while start is less than or equals to end:
+    if palindrome.charAt(start) != palindrome.charAt(end):
+        return false
+    start++;
+    end--;
+
+return true

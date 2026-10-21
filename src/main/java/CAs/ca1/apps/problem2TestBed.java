@@ -10,5 +10,9 @@ public class problem2TestBed {
         System.out.println(problem2.problem2BruteForce(palindrome1));
         System.out.println(problem2.problem2BruteForce(palindrome2));
         System.out.println(problem2.problem2BruteForce(notPalindrome));
+        System.out.println("--------------------------------");
+        System.out.println(problem2.problem2TwoPointer(palindrome1));
+        System.out.println(problem2.problem2TwoPointer(palindrome2));
+        System.out.println(problem2.problem2TwoPointer(notPalindrome));
     }
 }
