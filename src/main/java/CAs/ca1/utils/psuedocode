@@ -116,3 +116,33 @@ for i starting at 0 and ending at array.length-1:
             minLength = end - start + 1
         sum -= array[start]
         start++
+
+---------------------------------------------
+PROBLEM 4:
+BRUTE FORCE:
+    - start by turning the String word into an array
+    - create a for loop to cycle through the array, and collecting all vowels in a seperate list
+    - flip that list
+    - loop through the array again and replace the vowels in the order from the flipped list
+    - convert back to a string and return it
+
+VOWELS = {a,e,i,o,u}
+
+convert string to a list
+
+flippedVowels = {}
+
+for i starting at 0 and ending at array.length:
+    if i is a vowel:
+        store it in the flippedVowels list
+
+flip flippedVowels
+
+count = 0
+for i starting at 0 and ending at array.length:
+    if i is a vowel:
+        replace it with the vowel in count index in flipped list
+        count ++
+
+convert array back to a string
+return the string
