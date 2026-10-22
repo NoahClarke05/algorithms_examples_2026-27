@@ -146,3 +146,31 @@ for i starting at 0 and ending at array.length:
 
 convert array back to a string
 return the string
+
+TWO POINTER:
+    - create two pointers, start and end
+    - start begins at the start of the array, and end begins at the end
+    - create a while loop for while the pointers are on top of or passed eachother
+    - incrementaly move the pointers closer together
+    - each time they land on a vowel, flip them
+    - if one lands on a vowel and the other doesnt, wai until the other is on a vowel
+    - continue this process until the pointers meet or pass each other
+
+start = 0
+end = array.length - 1
+
+while start <= end:
+    if array[start] is a vowel and array[end] is a vowel:
+        swap(array[start], array[end])
+        start++
+        end--
+    elif array[start] is a vowel:
+        end--
+    elif array[end] is a vowel:
+        start++
+    else:
+        start++
+        end--
+
+convert array to a string
+return the string

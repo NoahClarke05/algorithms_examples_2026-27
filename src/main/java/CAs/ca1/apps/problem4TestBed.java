@@ -5,5 +5,10 @@ public class problem4TestBed {
     public static void main(String[] args) {
         System.out.println(problem4.problem4BruteForce("hello"));
         System.out.println(problem4.problem4BruteForce("University"));
+        System.out.println(problem4.problem4BruteForce("Noah Clarke"));
+
+        System.out.println(problem4.problem4TwoPointer("hello"));
+        System.out.println(problem4.problem4TwoPointer("University"));
+        System.out.println(problem4.problem4TwoPointer("Noah Clarke"));
     }
 }
